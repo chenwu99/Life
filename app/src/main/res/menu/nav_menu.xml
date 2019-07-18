@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_call"
+        android:icon="@drawable/id"
+        android:title="账号"/>
+    <item
+        android:id="@+id/nav_friends"
+        android:icon="@drawable/score"
+        android:title="得分"/>
+    <item
+        android:id="@+id/nav_location"
+        android:icon="@drawable/name"
+        android:title="签名"/>
+    <item
+        android:id="@+id/nav_mail"
+        android:icon="@drawable/unlog"
+        android:title="退出登录"/>
+    <item
+        android:id="@+id/nav_tast"
+        android:icon="@drawable/user"
+        android:title="切换账户"/>
+</group>
+</menu>

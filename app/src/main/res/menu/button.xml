@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/youzi"
+        android:icon="@drawable/youxi"
+        android:title="柚子"
+        />
+    <item
+        android:id="@+id/record"
+        android:icon="@drawable/record"
+        android:title="记录"
+        />
+    <item
+        android:id="@+id/tata"
+        android:icon="@drawable/tata"
+        android:title="她她圈"
+        />
+</menu>
