@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawer"
-    tools:context=".MainActivity">
+    tools:context=".Activity.MainActivity">
 
 
     <LinearLayout
@@ -19,6 +19,29 @@
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image_t"
+                    android:src="@drawable/touxiang"
+                    android:layout_width="?actionBarSize"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textview_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:paddingRight="5dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
 
         </android.support.v7.widget.Toolbar>
         <FrameLayout

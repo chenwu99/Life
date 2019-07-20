@@ -1,4 +1,4 @@
-package com.example.life;
+package com.example.life.Activity;
 
 import android.content.Intent;
 import android.support.constraint.ConstraintLayout;
@@ -6,7 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
-import android.widget.RelativeLayout;
+
+import com.example.life.R;
 
 public class star_Activity extends AppCompatActivity {
 
