@@ -1,70 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+   android:background="@drawable/logb"
+    android:orientation="vertical"
     tools:context=".Activity.LogInActivity">
 
     <EditText
-        android:hint="账号"
+        android:background="@drawable/shape_edit"
+        android:hint="请输入账号"
         android:id="@+id/editText1_Log"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2_Log"
-        app:layout_constraintVertical_bias="0.120000005"
-        tools:ignore="MissingConstraints" />
+        android:layout_height="?actionBarSize"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingLeft="10dp" />
 
     <EditText
-        android:hint="密码"
+        android:background="@drawable/shape_edit"
+        android:hint="请输入密码"
         android:id="@+id/editText2_Log"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.100000024" />
+        android:layout_height="?actionBarSize"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="15sp"/>
 
 
-
+<LinearLayout
+    android:layout_marginTop="50dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize">
     <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="登录"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/editText1_Log"
-        app:layout_constraintVertical_bias="0.78" />
-
-    <Button
+        android:background="@drawable/shape_button"
+        android:gravity="center"
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginLeft="68dp"
-        android:layout_marginBottom="8dp"
-        android:text="注册"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText1_Log"
-        app:layout_constraintVertical_bias="0.784" />
-</android.support.constraint.ConstraintLayout>
+        android:layout_width="110dp"
+        android:layout_height="match_parent"
+        android:text="注册新用户"/>
+    <View
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+
+
+    <Button
+        android:background="@drawable/shape_button"
+        android:id="@+id/button3"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="110dp"
+        android:layout_height="?actionBarSize"
+        android:text="登陆"
+        />
+</LinearLayout>
+
+
+</LinearLayout>

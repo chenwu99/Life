@@ -34,14 +34,18 @@ public class youzi_fragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         final View view=inflater.inflate(R.layout.fragment_youzi_fragment, container, false);
-        webView = view.findViewById(R.id.web);
-        webView.setWebViewClient(new WebViewClient(){
-            @Override
-            public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
-                return super.shouldOverrideUrlLoading(view, request);
-            }
-        });
-        webView.loadUrl("https://www.gotokeep.com/explore");
+        WebView webview = view.findViewById(R.id.web);
+        webview.getSettings().setJavaScriptEnabled(true);
+        webview.setWebViewClient(new WebViewClient());
+        webview.loadUrl("https://www.gotokeep.com/explore");
+//        webView = view.findViewById(R.id.web);
+//        webView.setWebViewClient(new WebViewClient(){
+//            @Override
+//            public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+//                return super.shouldOverrideUrlLoading(view, request);
+//            }
+       // });
+        //webView.loadUrl("https://www.gotokeep.com/explore");
 //       // User record= ((MainActivity)getActivity()).record;
 //        t1=view.findViewById(R.id.textView3);
 //        t2=view.findViewById(R.id.textView5);
