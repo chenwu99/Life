@@ -4,13 +4,17 @@ import android.content.Intent;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
+import android.webkit.WebView;
 
 import com.example.life.R;
 
-public class star_Activity extends AppCompatActivity {
+import static android.view.KeyEvent.KEYCODE_BACK;
 
+public class star_Activity extends AppCompatActivity {
+    private WebView webView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         //getSupportActionBar().hide();//隐藏标题栏;
@@ -38,4 +42,12 @@ public class star_Activity extends AppCompatActivity {
             }
         });
     }
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if ((keyCode == KEYCODE_BACK) && webView.canGoBack()) {
+            webView.goBack();
+            return true;
+        }
+        return (boolean) super.onKeyDown(keyCode, event);
+    }
+
 }

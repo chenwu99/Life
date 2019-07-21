@@ -13,7 +13,9 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.KeyEvent;
 import android.view.MenuItem;
+import android.webkit.WebView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,18 +27,21 @@ import com.example.life.classes.User;
 
 import cn.bmob.v3.BmobUser;
 
+import static android.view.KeyEvent.KEYCODE_BACK;
+
 public class MainActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
     private TextView textView;
     private DrawerLayout drawerLayout;
     public User record;
-
+    private WebView webView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         //getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        webView=findViewById(R.id.web);
         textView=findViewById(R.id.textview_t);
         toolbar= findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -117,5 +122,12 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction transaction = manager.beginTransaction();
         transaction.replace(R.id.fragment,fragment).commit();
     }
+//    public boolean onKeyDown(int keyCode, KeyEvent event) {
+//        if ((keyCode == KEYCODE_BACK) && webView.canGoBack()) {
+//            webView.goBack();
+//            return true;
+//        }
+//        return (boolean) super.onKeyDown(keyCode, event);
+//    }
 
 }
