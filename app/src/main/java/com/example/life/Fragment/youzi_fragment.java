@@ -38,6 +38,7 @@ public class youzi_fragment extends Fragment {
         webview.getSettings().setJavaScriptEnabled(true);
         webview.setWebViewClient(new WebViewClient());
         webview.loadUrl("https://www.gotokeep.com/explore");
+        webview.loadUrl("https://www.gotokeep.com/explore");
 //        webView = view.findViewById(R.id.web);
 //        webView.setWebViewClient(new WebViewClient(){
 //            @Override
